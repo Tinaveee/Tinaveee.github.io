@@ -1,0 +1,64 @@
+<!doctype html>
+<html> 
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Tina</title>
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300,300i,700" rel="stylesheet"> 
+
+<link rel="stylesheet" href="CSS/style.css" >
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="js/custom.js" type="text/javascript"></script>
+</head>
+<body background="images/wallpaperdancer.jpg">
+<header>
+	<nav>
+		 <ul class="topnav" id="myTopnav">
+  			<li><a href="index.html">HOME</a></li>
+  			<li><a href="page2.html">ABOUT</a></li>
+ 		  	<li><a href="page3.html">WORK</a></li>
+  			<li><a href="page4.html">CONTACT</a></li>
+  			<li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+	</nav>
+</header>
+<div id="contact-form" class="clearfix">
+    <h1>Say Hello</h1>
+    <h2>Fill out the form below to get in touch with me! Please provide as much information as possible for us to help you with your enquiry :)<br>
+    	* indicates a required field</h2>
+    <ul id="errors" class="">
+        <li id="info">There were some problems with your form submission:<br>Please fill in </li>
+    </ul>
+    <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+  
+    <form method="post" action="process.php" onsubmit="return validateForm()">
+        <label for="name">Name: <span class="required">*</span></label>
+        <input type="text" id="name" name="name" value="" placeholder="Your name" autofocus="autofocus"/>
+         
+        <label for="email">Email Address: <span class="required">*</span></label>
+        <input type="text" id="email" name="email" value="" placeholder="yourname@example.com"/>
+
+         
+        <label for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" name="telephone" value="" />
+       
+         
+        <label for="message">Message: <span class="required">*</span></label>
+        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters"data-minlength="20"></textarea>
+         
+        <span id="loading"></span>
+        <input type="submit" value="Submit" id="submit-button" />
+        
+    </form>
+  
+</div>
+
+<footer id="footer">s i m p l i c i t y  |  i s  |  p e r f e c t i o n</footer>
+	
+</body>
+</html>
