@@ -63,7 +63,9 @@ ul.topnav li.icon {display: none;}
 	font-size: 20px;
 	color: white;
 	padding-top: 10px;
-	clear: both;
+  position: absolute;
+  bottom: 0;
+  clear: both;
 
 }
 
